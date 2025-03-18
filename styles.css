@@ -266,6 +266,11 @@ iframe{
 
 @media (max-width: 1000px){
 
+    body{
+        width: 100vw;
+        height:100vh
+    }
+
     p{
         display: none;
     }
@@ -274,12 +279,19 @@ iframe{
         flex-direction: column;
         padding: 10px;
         margin-top: 35px;
+        button{
+            margin-left: 60px;
+        }
     }
 
     .caixa-principal{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .logo-mario{
+        margin-top: 100px;
     }
 
     .logo-mario-luigi{
@@ -305,5 +317,83 @@ iframe{
 
     .formulario{
         left: -100%;
+    }
+
+    #home{
+        .logo-mario-luigi{
+            width: 280px;
+            height: 300px;
+            margin-top: 0px;
+        }
+        p {
+            display: flex;
+            width: 380px;
+            padding: 10px;
+        }
+
+    }
+
+    #fale-conosco{
+        .caixa-mae{
+            flex-direction: column;
+            padding: 10px;
+            margin-top: 35px;
+        }
+        .caixa-principal{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 100px;
+            width: 100%;
+            height: 70%;
+            p {
+                display: flex;
+            }
+        }
+
+        .mapa{
+            margin-top: 15px;
+            padding: 15px;
+            width: 360px;
+            height: 280px;
+            align-items: center;
+        }
+        .mapa iframe{
+            width: 360px;
+            height: 260px;
+        }
+    }
+
+    #nossos-servicos{
+        .caixa-mae{
+            flex-direction: column;
+            padding: 10px;
+            margin-top: 35px;
+        }
+        .caixa-principal{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 100px;
+            margin-left: 15px;
+            width: 100%;
+            height: 70%;
+            p {
+                display: flex;
+            }
+
+        }
+        .logo-mario-luigi{
+            width: 280px;
+            height: 300px;
+            margin-top: 10px;
+        }
+    }
+
+    footer{
+        p{
+            display: block;
+            font-size: 16px;
+        }
     }
 }

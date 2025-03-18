@@ -7,6 +7,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
+.pagina{
+    scroll-snap-align: start;
+}
+
 .header{
     display: flex;
     align-items: center;
@@ -80,6 +88,12 @@ video{
 
 .logo-mario {
     width: 200px;
+}
+
+h2{
+    font-size: 40px;
+    color: aliceblue;
+    margin-top: 10px;
 }
 
 p{

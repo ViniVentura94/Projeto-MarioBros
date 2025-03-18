@@ -53,6 +53,20 @@ body{
     height: 100vh;
 }
 
+#fale-conosco{
+    .caixa-mae{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content:space-between;
+        padding: 70px;
+        height: 100vh;
+    }
+    .logo-mario-luigi{
+        width: 400px;
+    }
+}
+
 .caixa-mae{
     display: flex;
     align-items: center;
@@ -96,6 +110,14 @@ h2{
     margin-top: 10px;
 }
 
+h2:hover{
+    color: #c51111;
+    font-size: 45px;
+    transition: 0.5s ease-in-out;
+    font-weight: 700;
+    text-shadow: 0 0 10px #ed9494;
+}
+
 p{
     font-size: 17px;
     color: aliceblue;
@@ -135,11 +157,17 @@ button:hover{
     filter: drop-shadow(0 0 1rem #ffffff);
 }
 
-.logo-whatsapp{
-    height: 60px;
-    position: fixed;
+.logo-whatsapp, .logo-instagram{
+    height: 20px;
     bottom: 15px;
-    right: 15px
+    right: 15px;
+    
+}
+
+.logo-instagram:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(0 0 1rem #c5118c);
 }
 
 .logo-whatsapp:hover{
@@ -160,6 +188,17 @@ button:hover{
 
     top: 30%;
     left: -100%;
+}
+
+.lista-servicos{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: aliceblue;
+    font-size: 2;
+    font-weight: bold;
+
 }
 
 input, textarea{
@@ -184,6 +223,16 @@ textarea{
     top: 0;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
     transition: left 1s ease-in-out;
+}
+
+footer{
+    display: flex;
+    justify-content:space-between;
+    align-items:end;
+    height: 100px;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 20px;
 }
 
 /* Responsividade */

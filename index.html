@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Tech Mario Bros</title>
+    <title>Encanadores Mario Bros</title>
 </head>
 
 <body>
@@ -13,9 +13,9 @@
     <div class="header">
 
         <img class="logo-header" src="./assets/logo-header.png" alt="logo Header">
-        <a href="">Home</a>
-        <a href="">Fale conosco</a>
-        <a href="">Nossos serviços</a>
+        <a href="#home">Home</a>
+        <a href="#fale-conosco">Fale conosco</a>
+        <a href="#nossos-servicos">Nossos serviços</a>
 
     </div>
 
@@ -35,7 +35,7 @@
                         vocês
                         os encanadores mais famosos do Reino dos Cogumelos, Mario e Luigi!.
                         Espero que possa ter ajudado e vamos codar galera!!</p>
-                    <button onclick="cliqueiNoBotao()">Fale conosco</button>
+
                 </div>
 
                 <div>
@@ -49,10 +49,6 @@
 
                 <div class="mascara"></div>
             </div>
-
-            <a href="https://w.app/afjckw" target="_blank">
-                <img class="logo-whatsapp" src="./assets/whatsapp.png" alt="logo whatsapp">
-            </a>
 
             <form action="https://formcarry.com/s/w-2LLFw8g18" method="POST" enctype="multipart/form-data"
                 class="formulario">
@@ -67,37 +63,68 @@
 
         <li id="fale-conosco" class="pagina">
             <div class="caixa-mae">
-
                 <div class="caixa-principal">
-                    
-                    <h2>Fale conosco</h2>
-                    
+                    <h2>Fale Conosco</h2>
+                    <p>Entre em contato conosco para solicitar um orçamento ou tirar dúvidas.</p>
+                    <p><strong>Telefone:</strong> (11) 99999-9999</p>
+                    <p><strong>WhatsApp:</strong> <a href="https://w.app/afjckw" target="_blank">
+                            <img class="logo-whatsapp" src="./assets/whatsapp.png" alt="logo whatsapp">
+                        </a></p>
+                    <p><strong>Instagram:</strong> <a href="https://instagram.com.br" target="_blank">
+                            <img class="logo-instagram" src="./assets/instagram.png" alt="logo instagram">
+                        </a></p>
+                    <p><strong>Endereço:</strong> Rua dos Encanadores, 123 - São Paulo, SP</p>
+                    <button onclick="cliqueiNoBotao()">Fale conosco</button>
+
                 </div>
 
-                <div>
-                    <img class="logo-mario-luigi" src="./assets/mario.png" alt="imagem Mario e Luigi">
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093746!2d144.96305791567814!3d-37.81627974202145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1c5eaf3%3A0x4d30c0e1b5bccc3a!2sMelbourne%2C%20VIC%2C%20Australia!5e0!3m2!1sen!2sau!4v1615463214091!5m2!1sen!2sau"
+                        width="420px" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
+
+                <div class="caixa-video">
+                    <video autoplay muted loop src="./assets/video.mp4"></video>
+
+                    <div class="mascara"></div>
+                </div>
+
+                <form action="https://formcarry.com/s/w-2LLFw8g18" method="POST" enctype="multipart/form-data"
+                    class="formulario">
+                    <input type="text" name="nome" placeholder="Seu Nome">
+                    <input type="tel" name="telefone" placeholder="Seu Telefone">
+                    <textarea name="duvida" placeholder="Digite seu ploblema aqui."></textarea>
+                    <button type="submit">Pedir Orçamento</button>
+                </form>
+
+                <div onclick="cliqueiNaMascara()" class="mascara-formulario"></div>
 
             </div>
 
-            <div class="caixa-video">
-                <video autoplay muted loop src="./assets/video.mp4"></video>
-
-                <div class="mascara"></div>
-            </div>
-
-            <a href="https://w.app/afjckw" target="_blank">
-                <img class="logo-whatsapp" src="./assets/whatsapp.png" alt="logo whatsapp">
-            </a>
         </li>
 
         <li id="nossos-servicos" class="pagina">
             <div class="caixa-mae">
 
                 <div class="caixa-principal">
-                    
+
                     <h2>Nossos serviços</h2>
-                    
+                    <ul class="lista-servicos">
+                        <li>Desentupimentos</li>
+                        <li>Reparos de vazamentos</li>
+                        <li>Instalação de torneiras e chuveiros</li>
+                        <li>Manutenção de encanamentos</li>
+                        <li>Limpeza de canalizações</li>
+                        <li>Instalação de sistemas de esgoto</li>
+                        <li>Reparo de tubulações de esgoto</li>
+                        <li>Instalação de sistemas de drenagem</li>
+                        <li>Reparo de tubulações de drenagem</li>
+                    </ul>
+                    <br>
+                    <p>Entre em contato para mais informações</p>
+                    <button onclick="cliqueiNoBotao()">Fale conosco</button>
+
                 </div>
 
                 <div>
@@ -112,9 +139,17 @@
                 <div class="mascara"></div>
             </div>
 
-            <a href="https://w.app/afjckw" target="_blank">
-                <img class="logo-whatsapp" src="./assets/whatsapp.png" alt="logo whatsapp">
-            </a>
+            <footer class="footer">
+                <div>
+                    <p>&copy; 2025 Encanadores Mario Bros. Todos os direitos reservados.</p>
+                </div>
+
+                <div><a href="https://w.app/afjckw" target="_blank"> <img class="logo-whatsapp"
+                            src="./assets/whatsapp.png" alt="logo whatsapp"></a>
+                    <a href="https://instagram.com.br" target="_blank"> <img class="logo-instagram"
+                            src="./assets/instagram.png" alt="logo instagram"></a>
+                </div>
+            </footer>
 
         </li>
 

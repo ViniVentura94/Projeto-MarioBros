@@ -15,3 +15,4 @@ function cliqueiNaMascara() {
     form.style.transform = "translateX(0)"
     form.style.left = "-100%";
 }
+
